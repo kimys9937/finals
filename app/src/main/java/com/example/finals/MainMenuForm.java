@@ -1,7 +1,6 @@
 package com.example.finals;
 
 import android.os.Bundle;
-import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.LinearLayout;
 
@@ -27,7 +26,7 @@ public class MainMenuForm extends AppCompatActivity {
 
 
             ImageView ima = new ImageView((this));
-            ima.setImageResource(R.drawable.kimchi); // 이미지 리소스
+            ima.setImageResource(R.drawable.h1); // 이미지 리소스
             ima.setMaxWidth(100);
             ima.setMaxHeight(100);
             ima.setId(R.id.image);
