@@ -10,16 +10,19 @@ import android.widget.ImageView;
 
 public class Hansik_1 extends AppCompatActivity {
 
-    ImageView kimchi_btn_ply;
+    Integer[] picture = {R.drawable.kimchi, R.drawable.bul};
+    ImageView image;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.hansik_1);
 
-        kimchi_btn_ply = (ImageView) findViewById(R.id.kimchi_btn_ply);
+        image = (ImageView) findViewById(R.id.image);
+        Hansik han = new Hansik();
+        image.setImageResource(picture[0]);//선택한 버튼의 사진으로 바꾸기
 
-        kimchi_btn_ply.setOnClickListener(view -> {
+        image.setOnClickListener(view -> {
             String url = "https://www.youtube.com/watch?v=S7qcu7iFvB4";
             Intent intent = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             startActivity(intent);

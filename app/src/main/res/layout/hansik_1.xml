@@ -6,7 +6,7 @@
     <ImageView
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@drawable/kimchi"
-        android:id="@+id/kimchi_btn_ply"/>
+        android:src="@drawable/test"
+        android:id="@+id/image"/>
 
 </LinearLayout>
