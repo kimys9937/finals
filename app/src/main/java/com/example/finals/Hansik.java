@@ -13,8 +13,10 @@ import android.widget.ImageView;
 
 public class Hansik extends AppCompatActivity {
 
-    Button[] btn = new Button[3];//선택지 추가하면 버튼 늘릴것
-    Integer[] btnName = {R.id.kimchi_btn, R.id.bul_btn, R.id.h3_btn};
+
+    Integer[] btnName = {R.id.kimchi_btn, R.id.bul_btn, R.id.h3_btn, R.id.h4_btn,
+            R.id.h5_btn,R.id.h6_btn,R.id.h7_btn,R.id.h8_btn};
+    Button[] btn = new Button[btnName.length];//선택지 추가하면 자동으로 늘어남
     //Integer[] picture = {R.drawable.kimchi, R.drawable.bul};
     ImageView image;
     int i;
