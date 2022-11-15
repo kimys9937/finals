@@ -30,7 +30,7 @@ public class Hansik_1 extends AppCompatActivity {
 
 
 
-        image.setOnClickListener(view -> {
+        image.setOnClickListener(view -> {//유튜브 가기
             String url = youtube[ind];
             Intent intent1 = new Intent(Intent.ACTION_VIEW, Uri.parse(url));
             startActivity(intent1);
